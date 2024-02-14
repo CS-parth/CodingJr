@@ -1,0 +1,174 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.nav-container{
+  width: 100vw;
+}
+
+.logo img{
+  height: 100px;
+  width: 300px;
+}
+
+ul > li{
+  list-style: none;
+
+}
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+.scroller-container {
+    display: inline-block;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    position: relative;
+    width: 100vw;
+}
+
+.scroller{
+  display: flex; /* Use flex to make child elements appear in a row */
+  width: 100vw;
+  overflow: hidden;
+  /* outline: 2px solid lime; */
+  white-space: nowrap; /* Prevent list items from wrapping */
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  animation: scroll 10s infinite linear; /* Start the scrolling animation */
+}
+
+
+/* Create faded edges */
+.scroller-container::before,
+.scroller-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px; /* Adjust the width of the fade */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.scroller-container::after {
+  right: 0;
+  left: auto;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.profile{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%,-50%);
+}
+
+header{
+  height: 300px;
+  width: 100vw;
+  background-color: #F4CE14;
+}
+.profile-wrapper{
+  position: relative;
+}
+.title{
+  font-size: 30px;
+}
+.title::after{
+  content: "";
+  display: block;
+  border-bottom: 1px solid black;
+}
+.date{
+  margin-top: 10px;
+}
+.course{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+.course-container{
+  position: absolute;
+  width: 50%;
+  height: auto;
+  margin: 50px 0px 10px 0px;
+}
+
+.preview{
+  border-radius: 5px;
+}
+
+.card-container{
+  position: relative;
+}
+.card{
+  position: absolute;
+  height: 600px;
+  width: 300px;
+  background-color: #495E57;
+  top: 200px;
+  left: 5%;
+}
+
+.card-img{
+  height: 30%;
+}
+.card-img img{
+  height: 100%;
+  width: 100%;
+}
+.card-img::after{
+  content: "";
+  display: block;
+  border-bottom: 1px solid black;
+  width: 80%;
+  margin: auto;
+}
+
+.card-content{
+  padding: 30px;
+}
+
+.card-content div{
+  margin: 20px;
+  color: yellow;
+}
+
+footer{
+  width: 100vw;
+  background-color: #45474B;
+  height: auto;
+}
+.copy_right{
+  text-align: center;
+}
+
+li{
+  color: yellow;
+}
+.footer-container > div{
+  text-align: center;
+}
+h2{
+  margin: 5px;
+  margin-bottom: 20px;
+}
+.copy_right{
+  /* margin: 5px; */
+}

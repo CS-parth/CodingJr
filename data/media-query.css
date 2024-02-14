@@ -1,0 +1,112 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1800px) {
+    .card {
+        width: 250px;
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .profile {
+        left: 70%;
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .course-container {
+        left: 40%;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    header {
+        height: 350px;
+    }
+    .card {
+        width: 200px;
+        height: 400px;
+    }
+    .card-content > div {
+        margin: 10px;
+    }
+    .course-container {
+        left: 30%;
+    }
+    .preview > video{
+        height: 220px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .logo img{
+        height: 50px;
+        width: 150px;
+    }
+    .preview > video{
+        height: 200px;
+        width: 250px;
+    }
+    header{
+        height: 400px;
+    }
+    .card{
+        width: 160px;
+        height: 360px;
+    }
+    .card-content{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+    .preview > video{
+        height: 200px;
+        width: 220px;
+    }
+    header{
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .card{
+        position: static;
+        margin: auto;
+        width: 400px;
+        height: 600px;
+    }
+    .card-content{
+        padding: 80px;
+    }
+    .card-content > div{
+        margin: 20px;
+    }
+    .card-container{
+        position: static;
+        /* text-align: center; */
+    }
+    .profile {
+        left: 50%;
+    }
+    .preview{
+        display: hidden;
+    }
+    header{
+        height: 550px;
+    }
+    .preview > video{
+        height: 150px;
+        width: 150px;
+    }
+}
